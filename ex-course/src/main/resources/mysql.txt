@@ -1,0 +1,4 @@
+className=com.mysql.jdbc.Driver
+url=jdbc:mysql:///test_01?useSSL=false
+username=root
+password=root
