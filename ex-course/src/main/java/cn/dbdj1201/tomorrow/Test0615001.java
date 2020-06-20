@@ -29,7 +29,6 @@ public class Test0615001 {
         url = prop.getProperty("url");
         username = prop.getProperty("username");
         password = prop.getProperty("password");
-
     }
 
     public static void main(String[] args) throws SQLException {
@@ -57,6 +56,7 @@ public class Test0615001 {
         person001s.forEach(System.out::println);
 
     }
+    
 }
 
 class Person001 {
