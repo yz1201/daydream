@@ -4,6 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author yz1201
@@ -11,18 +13,52 @@ import java.util.List;
  **/
 @Slf4j(topic = "c.TestAccount")
 public class TestAccount {
-    public static void main(String[] args) {
-        Account accout = new AccountImpl(10000);
-        Account.demo(accout);
+    public static void main(String[] args) throws InterruptedException {
+        Account account = new AccountImpl(10000);
+        //Account account2 = new AccountImpl2(10000);
+        Account.demo(account);
+        log.debug("sleep 1 s");
+        TimeUnit.SECONDS.sleep(1);
+        //Account.demo(account2);
     }
 
 }
 
+@Slf4j(topic = "c.AccountImpl")
 class AccountImpl implements Account {
 
-    private Integer balance;
+    private AtomicInteger balanceBake;
 
-    public AccountImpl(Integer balance) {
+    public AccountImpl(int balanceBake) {
+        this.balanceBake = new AtomicInteger(balanceBake);
+    }
+
+    @Override
+    public Integer getBalance() {
+        return this.balanceBake.get();
+    }
+
+    @Override
+    public void withdraw(Integer amount) {
+//        this.balanceBake.addAndGet(-amount);
+//        this.balanceBake.compareAndSet(this.balanceBake.get(), this.balanceBake.get() - amount);
+
+        while (true) {
+            int expect = this.balanceBake.get();
+            int val = expect - amount;
+//            log.debug("expect:{}", expect);
+            if (this.balanceBake.compareAndSet(expect, val)) {
+                break;
+            }
+        }
+    }
+
+}
+
+class AccountImpl2 implements Account {
+    private int balance;
+
+    public AccountImpl2(Integer balance) {
         this.balance = balance;
     }
 
@@ -61,7 +97,7 @@ interface Account {
         });
 
         long end = System.nanoTime();
-        System.out.println(account.getBalance() + " cost: " + (end - start) / 1000_000 + "ms");
+        System.out.println("who: " + account.getBalance() + " cost: " + (end - start) / 1000_000 + "ms");
     }
 }
 

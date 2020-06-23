@@ -29,23 +29,22 @@ public class Test0615001 {
         url = prop.getProperty("url");
         username = prop.getProperty("username");
         password = prop.getProperty("password");
-    }
-
-    public static void main(String[] args) throws SQLException {
         try {
             Class.forName(className);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
 
-
+    public static void main(String[] args) throws SQLException {
         Connection conn = DriverManager.getConnection(url,
                 username, password);
         PreparedStatement psmt = conn.prepareStatement("select * from tb_t2");
         ResultSet resultSet = psmt.executeQuery();
         List<Person001> person001s = new ArrayList<>();
+        Person001 person001;
         while (resultSet.next()) {
-            Person001 person001 = new Person001();
+            person001 = new Person001();
             person001.setId(resultSet.getLong(1));
             person001.setName(resultSet.getString(2));
             person001.setAge(resultSet.getInt(3));
@@ -55,8 +54,10 @@ public class Test0615001 {
 
         person001s.forEach(System.out::println);
 
+        psmt.close();
+        conn.close();
     }
-    
+
 }
 
 class Person001 {
