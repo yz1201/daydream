@@ -1,7 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2026997f-c6c8-4b83-a11e-9b20ec16c110" name="Default Changelist" comment="" />
+    <list default="true" id="2026997f-c6c8-4b83-a11e-9b20ec16c110" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap8/Demo007.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap8/Test062701.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap8/Test062801.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap8/TestReadWriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap8/TestStampedLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/html/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/html/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/image/bgimg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/js/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex-course/src/main/resources/static/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrentProgrammingStudy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/concurrentProgrammingStudy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap7/IDataPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap7/IDataPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap8/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java/cn/dbdj1201/cos/cap8/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/DemoApplication12010.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/DemoApplication12010.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/entities/ClassModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/entities/ClassModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/entities/CommonResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/entities/CommonResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/entities/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/entities/UserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/mapper/ClassModelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/mapper/ClassModelMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/mapper/UserModelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/mapper/UserModelMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/service/IClassModelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/service/IClassModelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/service/impl/ClassModelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/service/impl/ClassModelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/cn/dbdj1201/demo/service/impl/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/classes/static/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/classes/static/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/test-classes/cn/dbdj1201/demo/mapper/ClassModelMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/test-classes/cn/dbdj1201/demo/mapper/ClassModelMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/test-classes/cn/dbdj1201/demo/service/impl/ClassModelServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/test-classes/cn/dbdj1201/demo/service/impl/ClassModelServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcDemo/target/test-classes/cn/dbdj1201/demo/service/impl/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcDemo/target/test-classes/cn/dbdj1201/demo/service/impl/UserServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,9 +93,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -24,20 +106,14 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="F:\repo\repo_mine" />
-        <option name="mavenHome" value="F:/tools/maven/apache-maven-3.6.3" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../tools/maven/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="F:\tools\maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1dTTKZHRWqSKlHiTghFKh7m14Xx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -46,12 +122,14 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jdbcDemo/src/main/java/cn/dbdj1201/demo/entities" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -59,90 +137,112 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../study/courseData/高并发/concurrent/case_java8/src/main/java/cn/itcast/n8/TestPool.java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="cn.dbdj1201.demo.service.impl" />
       <recent name="cn.dbdj1201.demo.mapper" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\it_course\daydream\ex-course\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.dbdj1201.exam" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\it_course\daydream\jdbcDemo\src\main\java\cn\dbdj1201\demo\entities" />
-      <recent name="F:\it_course\daydream\ex-course\src\main\java\cn\dbdj1201\demo2" />
-      <recent name="F:\it_course\daydream\ex-course" />
-      <recent name="F:\it_course\daydream\ex-course\src" />
+      <recent name="F:\it_course\daydream\ex-course\src\main\resources\static\html" />
+      <recent name="F:\it_course\daydream\ex-course\src\main\resources\static\image" />
+      <recent name="F:\it_course\daydream\ex-course\src\main\resources\static\css" />
+      <recent name="F:\it_course\daydream\ex-course\src\main\resources\static\js" />
+      <recent name="F:\it_course\daydream\ex-course\src\main\resources\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication12010">
-    <configuration name="ClassModelServiceTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jdbcDemo" />
+  <component name="RunManager" selected="Application.Test062801">
+    <configuration name="Base" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dbdj1201.cos.cap8.Base" />
+      <module name="concurrentProgrammingStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.dbdj1201.demo.service.impl.*" />
+          <option name="PATTERN" value="cn.dbdj1201.cos.cap8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.dbdj1201.demo.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="cn.dbdj1201.demo.service.impl.ClassModelServiceTest" />
-      <option name="METHOD_NAME" value="findAll" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jdbcDemo" />
+    <configuration name="Test062701" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dbdj1201.cos.cap8.Test062701" />
+      <module name="concurrentProgrammingStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.dbdj1201.demo.service.impl.*" />
+          <option name="PATTERN" value="cn.dbdj1201.cos.cap8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.dbdj1201.demo.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="cn.dbdj1201.demo.service.impl.UserServiceTest" />
-      <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplication12010" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="jdbcDemo" />
+    <configuration name="Test062801" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dbdj1201.cos.cap8.Test062801" />
+      <module name="concurrentProgrammingStudy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.dbdj1201.demo.*" />
+          <option name="PATTERN" value="cn.dbdj1201.cos.cap8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.dbdj1201.demo.DemoApplication12010" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestReadWriteLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dbdj1201.cos.cap8.TestReadWriteLock" />
+      <module name="concurrentProgrammingStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dbdj1201.cos.cap8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStampedLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dbdj1201.cos.cap8.TestStampedLock" />
+      <module name="concurrentProgrammingStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dbdj1201.cos.cap8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DemoApplication12010" />
-        <item itemvalue="JUnit.UserServiceTest.login" />
-        <item itemvalue="JUnit.ClassModelServiceTest.findAll" />
+        <item itemvalue="Application.Test062801" />
+        <item itemvalue="Application.TestStampedLock" />
+        <item itemvalue="Application.Base" />
+        <item itemvalue="Application.Test062701" />
+        <item itemvalue="Application.TestReadWriteLock" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -156,61 +256,255 @@
       <updated>1592448019965</updated>
       <workItem from="1592448021815" duration="10741000" />
       <workItem from="1592467404137" duration="49000" />
-      <workItem from="1592467735599" duration="669000" />
+      <workItem from="1592467735599" duration="4156000" />
+      <workItem from="1592526336821" duration="8279000" />
+      <workItem from="1592537130486" duration="11146000" />
+      <workItem from="1592612656361" duration="471000" />
+      <workItem from="1592617590393" duration="407000" />
+      <workItem from="1592618487657" duration="169000" />
+      <workItem from="1592630715743" duration="27000" />
+      <workItem from="1592642716184" duration="27000" />
+      <workItem from="1592645325036" duration="6529000" />
+      <workItem from="1592699209034" duration="4668000" />
+      <workItem from="1592704176513" duration="610000" />
+      <workItem from="1592707171245" duration="788000" />
+      <workItem from="1592732863074" duration="5058000" />
+      <workItem from="1592872132134" duration="1119000" />
+      <workItem from="1592874801011" duration="21882000" />
+      <workItem from="1592909599151" duration="650000" />
+      <workItem from="1592910361387" duration="193000" />
+      <workItem from="1592910598534" duration="2204000" />
+      <workItem from="1592914269640" duration="1090000" />
+      <workItem from="1592920487958" duration="66000" />
+      <workItem from="1592920612351" duration="26000" />
+      <workItem from="1592920816141" duration="103000" />
+      <workItem from="1592920963942" duration="22000" />
+      <workItem from="1592958399514" duration="2970000" />
+      <workItem from="1592963266595" duration="17290000" />
+      <workItem from="1592991034669" duration="584000" />
+      <workItem from="1592993690992" duration="2819000" />
+      <workItem from="1593055199855" duration="186000" />
+      <workItem from="1593055446973" duration="112000" />
+      <workItem from="1593131223608" duration="11945000" />
+      <workItem from="1593150302138" duration="189000" />
+      <workItem from="1593150767568" duration="281000" />
+      <workItem from="1593151190519" duration="747000" />
+      <workItem from="1593152106277" duration="5492000" />
+      <workItem from="1593158104628" duration="1176000" />
+      <workItem from="1593159436949" duration="88000" />
+      <workItem from="1593159618111" duration="169000" />
+      <workItem from="1593159897323" duration="9283000" />
+      <workItem from="1593176133023" duration="555000" />
+      <workItem from="1593217673631" duration="29811000" />
+      <workItem from="1593265262996" duration="19000" />
+      <workItem from="1593267313434" duration="387000" />
+      <workItem from="1593267830170" duration="289000" />
+      <workItem from="1593268185865" duration="303000" />
+      <workItem from="1593268586778" duration="287000" />
+      <workItem from="1593268966415" duration="683000" />
+      <workItem from="1593269738800" duration="93000" />
+      <workItem from="1593269984023" duration="28000" />
+      <workItem from="1593270061369" duration="40000" />
+      <workItem from="1593301134193" duration="122000" />
+      <workItem from="1593303886008" duration="172000" />
+      <workItem from="1593314017918" duration="535000" />
+      <workItem from="1593314773813" duration="227000" />
+      <workItem from="1593315078384" duration="863000" />
+      <workItem from="1593316066554" duration="96000" />
+      <workItem from="1593324036928" duration="232000" />
+      <workItem from="1593324487918" duration="27000" />
+      <workItem from="1593324638134" duration="1602000" />
+      <workItem from="1593328461130" duration="344000" />
+      <workItem from="1593328937978" duration="4415000" />
+      <workItem from="1593346383773" duration="665000" />
+      <workItem from="1593347254936" duration="5032000" />
+      <workItem from="1593352610343" duration="529000" />
     </task>
+    <task id="LOCAL-00001" summary="exam test">
+      <created>1592618556299</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592618556299</updated>
+    </task>
+    <task id="LOCAL-00002" summary="juc -st first step">
+      <created>1592653180339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592653180339</updated>
+    </task>
+    <task id="LOCAL-00003" summary="juc -st cap7 共享模型之不可变">
+      <created>1592912763728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592912763728</updated>
+    </task>
+    <task id="LOCAL-00004" summary="juc -st cap8 线程池">
+      <created>1593176627535</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593176627535</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="exam test" />
+    <MESSAGE value="juc -st first step" />
+    <MESSAGE value="juc -st cap7 共享模型之不可变" />
+    <MESSAGE value="juc -st cap8 线程池" />
+    <option name="LAST_COMMIT_MESSAGE" value="juc -st cap8 线程池" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="444" y="6" key="#com.intellij.ide.util.MemberChooser" timestamp="1592463114073">
+    <state x="175" y="0" key="#Inspections" timestamp="1592890614803">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="444" y="6" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1592463114073" />
-    <state width="1315" height="3" key="GridCell.Tab.0.bottom" timestamp="1592465169951">
+    <state x="175" y="0" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1592890614803" />
+    <state x="495" y="199" key="#Notifications" timestamp="1593324679186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1315" height="3" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592465169951" />
-    <state width="1315" height="3" key="GridCell.Tab.0.center" timestamp="1592465169951">
+    <state x="495" y="199" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1593324679186" />
+    <state x="175" y="0" key="#Updates" timestamp="1592914510488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1315" height="3" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592465169951" />
-    <state width="1315" height="3" key="GridCell.Tab.0.left" timestamp="1592465169951">
+    <state x="175" y="0" key="#Updates/0.0.1366.728@0.0.1366.728" timestamp="1592914510488" />
+    <state x="273" y="109" key="#VisualVM_Launcher" timestamp="1593159100289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1315" height="3" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592465169951" />
-    <state width="1315" height="3" key="GridCell.Tab.0.right" timestamp="1592465169951">
+    <state x="273" y="109" key="#VisualVM_Launcher/0.0.1366.728@0.0.1366.728" timestamp="1593159100289" />
+    <state x="376" y="193" width="786" height="341" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1593330147943">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1315" height="3" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592465169951" />
-    <state width="1315" height="3" key="GridCell.Tab.1.bottom" timestamp="1592465169951">
+    <state x="376" y="193" width="786" height="341" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1366.728@0.0.1366.728" timestamp="1593330147943" />
+    <state x="119" y="10" width="1247" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593159238077">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1315" height="3" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592465169951" />
-    <state width="1315" height="3" key="GridCell.Tab.1.center" timestamp="1592465169951">
+    <state x="119" y="10" width="1247" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1593159238077" />
+    <state x="337" y="204" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1593324337727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1315" height="3" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592465169951" />
-    <state width="1315" height="3" key="GridCell.Tab.1.left" timestamp="1592465169951">
+    <state x="337" y="204" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1366.728@0.0.1366.728" timestamp="1593324337727" />
+    <state x="313" y="79" key="#com.intellij.ide.util.ExportDialog" timestamp="1592890852472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1315" height="3" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592465169951" />
-    <state width="1315" height="3" key="GridCell.Tab.1.right" timestamp="1592465169951">
+    <state x="313" y="79" key="#com.intellij.ide.util.ExportDialog/0.0.1366.728@0.0.1366.728" timestamp="1592890852472" />
+    <state x="444" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1593254262334">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1315" height="3" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592465169951" />
-    <state x="70" y="0" key="SettingsEditor" timestamp="1592467788682">
+    <state x="444" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1593254262334" />
+    <state x="304" y="132" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1593134889696">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="70" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592467788682" />
+    <state x="304" y="132" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1366.728@0.0.1366.728" timestamp="1593134889696" />
+    <state x="350" y="53" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592550123262">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="350" y="53" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592550123262" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1593176606692">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1593176606692" />
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="DiffContextDialog" timestamp="1593011217602">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1593011217602" />
+    <state x="404" y="62" width="788" height="607" key="FileChooserDialogImpl" timestamp="1593347027119">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="404" y="62" width="788" height="607" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593347027119" />
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom" timestamp="1593333409442">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="177" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593333409442" />
+    <state width="1323" height="177" key="GridCell.Tab.0.center" timestamp="1593333409427">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="177" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593333409427" />
+    <state width="1323" height="177" key="GridCell.Tab.0.left" timestamp="1593333409427">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="177" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593333409427" />
+    <state width="1323" height="177" key="GridCell.Tab.0.right" timestamp="1593333409442">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593333409442" />
+    <state width="1315" height="3" key="GridCell.Tab.1.bottom" timestamp="1593255503522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1315" height="3" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593255503522" />
+    <state width="1315" height="3" key="GridCell.Tab.1.center" timestamp="1593255503522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1315" height="3" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1593255503522" />
+    <state width="1315" height="3" key="GridCell.Tab.1.left" timestamp="1593255503522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1315" height="3" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1593255503522" />
+    <state width="1315" height="3" key="GridCell.Tab.1.right" timestamp="1593255503522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1315" height="3" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1593255503522" />
+    <state x="18" y="0" width="1283" height="728" key="SettingsEditor" timestamp="1593347031282">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="18" y="0" width="1283" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593347031282" />
+    <state x="338" y="43" width="942" height="655" key="StructurePopup" timestamp="1593332569150">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="338" y="43" width="942" height="655" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1593332569150" />
+    <state x="175" y="32" key="Vcs.Push.Dialog.v2" timestamp="1593176654175">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="32" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1593176654175" />
+    <state width="839" height="726" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1592959046360">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="839" height="726" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1366.728@0.0.1366.728" timestamp="1592959046360" />
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1593314039543">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593314039543" />
     <state x="349" y="15" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1592463305774">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="349" y="15" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1592463305774" />
-    <state x="0" y="0" key="new project wizard" timestamp="1592449341056">
+    <state x="350" y="68" key="extract.method.dialog" timestamp="1593142923676">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1592449341056" />
+    <state x="350" y="68" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1593142923676" />
+    <state x="385" y="0" width="596" height="728" key="find.popup" timestamp="1593328663741">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="385" y="0" width="596" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1593328663741" />
+    <state x="0" y="0" key="new project wizard" timestamp="1592645416893">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1592645416893" />
+    <state x="255" y="159" key="run.anything.popup" timestamp="1592736621052">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="255" y="159" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1592736621052" />
+    <state x="245" y="0" width="874" height="726" key="search.everywhere.popup" timestamp="1593253957248">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="245" y="0" width="874" height="726" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593253957248" />
   </component>
 </project>

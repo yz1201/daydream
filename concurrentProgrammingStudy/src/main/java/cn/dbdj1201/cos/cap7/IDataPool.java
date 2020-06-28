@@ -6,6 +6,7 @@ import java.sql.*;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
@@ -20,7 +21,10 @@ public class IDataPool {
     //连接池状态数组，0表示空闲，1表示繁忙
     private AtomicIntegerArray states;
 
+    private Semaphore semaphore;
+
     public IDataPool(int poolSize) {
+        this.semaphore = new Semaphore(poolSize);
         this.poolSize = poolSize;
         conns = new Connection[poolSize];
         states = new AtomicIntegerArray(poolSize);
@@ -31,26 +35,36 @@ public class IDataPool {
 
     //获取一条数据库连接
     public Connection borrow() {
-        while (true) {
-            for (int i = 0; i < poolSize; i++) {
-                //获取空闲连接
-                if (states.get(i) == 0) {
-                    if (states.compareAndSet(i, 0, 1)) {
-                        log.debug("borrow {}", conns[i]);
-                        return conns[i];
-                    }
-                }
-            }
-            //如果没有空闲连接，让当前线程进入等待
-            synchronized (this) {
-                try {
-                    log.debug("wait...");
-                    this.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+//        while (true) {
+//
+//            //如果没有空闲连接，让当前线程进入等待
+//            synchronized (this) {
+//                try {
+//                    log.debug("wait...");
+//                    this.wait();
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }
+
+        try {
+            semaphore.acquire();//没有许可的线程将会阻塞，控制线程数量
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        for (int i = 0; i < poolSize; i++) {
+            //获取空闲连接
+            if (states.get(i) == 0) {
+                if (states.compareAndSet(i, 0, 1)) {
+                    log.debug("borrow {}", conns[i]);
+                    return conns[i];
                 }
             }
         }
+        //由于并发，执行不到的return
+        return null;
     }
 
     //归还数据库连接
@@ -58,10 +72,12 @@ public class IDataPool {
         for (int i = 0; i < poolSize; i++) {
             if (conns[i] == conn) {
                 states.set(i, 0);
-                synchronized (this) {
-                    log.debug("free {}", conn);
-                    this.notifyAll();
-                }
+//                synchronized (this) {
+//                    log.debug("free {}", conn);
+//                    this.notifyAll();
+//                }
+                log.debug("free {}", conn);
+                semaphore.release();
                 break;
             }
         }
