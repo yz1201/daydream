@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BeautifulTable</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="container bg-success">
+
+<div class="row">
+    <!--    <div class="dropdown col-lg-4">-->
+    <!--        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">-->
+    <!--            Dropdown button-->
+    <!--        </button>-->
+    <!--        <div class="dropdown-menu" id="menu1">-->
+    <!--            <a id="henan" class="dropdown-item" href="#">河南省</a>-->
+    <!--            <a id="zhejiang" class="dropdown-item" href="#">浙江省</a>-->
+    <!--            <a id="taiwan" class="dropdown-item" href="#">台湾省</a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <!--    <div class="dropdown col-lg-4" id="menu2">-->
+    <!--        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">-->
+    <!--            Dropdown button-->
+    <!--        </button>-->
+    <!--        <div class="dropdown-menu">-->
+    <!--&lt;!&ndash;            <a id="city1" class="dropdown-item" href="#">Link 1</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <a id="city2" class="dropdown-item" href="#">Link 2</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;            <a id="city3" class="dropdown-item" href="#">Link 3</a>&ndash;&gt;-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <div class="col-lg-6">
+        <select id="provice" name="pro" onchange="change(this.value)">
+            <option value="0">--请选择--</option>
+            <option value="1">河南省</option>
+            <option value="2">浙江省</option>
+            <option value="3">台湾省</option>
+        </select>
+    </div>
+
+    <div class="col-lg-6">
+        <select id="city">
+            <option>--请选择--</option>
+            <!--            <option>河南省</option>-->
+            <!--            <option>浙江省</option>-->
+            <!--            <option>台湾省</option>-->
+        </select>
+    </div>
+
+
+</div>
+
+
+<script>
+    // const province = document.getElementById("menu1");
+    const citys = document.getElementById("menu1");
+
+    let array1 = new Array(3);
+    array1[0] = ["", "--请选择--"];
+    array1[1] = ["开封", "郑州", "登封"];
+    array1[2] = ["杭州", "温州", "湖州"];
+    array1[3] = ["台北", "高雄", "花莲"];
+
+    // const citys = document.getElementById("menu2");
+    function change(obj) {
+        // if (province.value === "he")
+        console.log("val - " + obj)
+        // citys.innerHTML="";
+        for (let i = 1; i < array1.length; i++) {
+            const option1 = document.createElement("option");
+            const text1 = document.createTextNode(array1[obj][i]);
+            option1.appendChild(text1);
+            console.log(option1)
+            citys.appendChild(option1);
+        }
+    }
+
+</script>
+</body>
+</html>

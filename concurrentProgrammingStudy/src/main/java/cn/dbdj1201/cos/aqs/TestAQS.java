@@ -32,7 +32,7 @@ public class TestAQS {
                 log.debug("t1 unlocking");
                 lock.unlock();
             }
-        },"t1").start();
+        }, "t1").start();
 
 //        new Thread(() -> {
 //            lock.lock();
@@ -55,10 +55,11 @@ class MyLock implements Lock {
      * 独占锁
      * 同步器类
      */
-    class MySync extends AbstractQueuedLongSynchronizer {
+    private static class MySync extends AbstractQueuedLongSynchronizer {
 
         @Override
         protected boolean tryAcquire(long arg) {
+            assert arg == 1;
             if (compareAndSetState(0, 1)) {
                 //加锁，并且设置owner为当前线程
                 setExclusiveOwnerThread(Thread.currentThread());
@@ -69,14 +70,18 @@ class MyLock implements Lock {
 
         @Override
         protected boolean tryRelease(long arg) {
+            assert arg == 1;
+            if (!isHeldExclusively()) {
+                throw new IllegalMonitorStateException();
+            }
             setExclusiveOwnerThread(null);
-            setState(0);
+            setState(0L);
             return true;
         }
 
         @Override
         protected boolean isHeldExclusively() {
-            return getState() == 1;
+            return getExclusiveOwnerThread() == Thread.currentThread();
         }
 
         public Condition newCondition() {
@@ -84,7 +89,7 @@ class MyLock implements Lock {
         }
     }
 
-    private MySync sync = new MySync();
+    private final MySync sync = new MySync();
 
     @Override
     public void lock() {

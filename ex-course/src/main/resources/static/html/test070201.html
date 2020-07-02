@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test01</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td id="td_3">3</td>
+    </tr>
+</table>
+
+<button id="btn_1">click me</button>
+
+<script>
+    const elementById = document.getElementById("td_3");
+    console.log(elementById);
+    console.log(elementById.parentNode);
+    console.log(elementById.parentNode.parentNode);
+    console.log(elementById.parentNode.parentNode.parentNode);
+
+    document.getElementById("btn_1").onclick = function () {
+        alert(elementById);
+        alert(elementById.parentNode);
+        alert(elementById.parentNode.parentNode);
+        alert(elementById.parentNode.parentNode.parentNode);
+    }
+</script>
+</body>
+</html>

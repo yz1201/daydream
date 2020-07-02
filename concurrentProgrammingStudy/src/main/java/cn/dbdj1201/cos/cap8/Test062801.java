@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class Test062801 {
 
     public static void main(String[] args) {
-        Semaphore s = new Semaphore(3);
+        Semaphore s = new Semaphore(1);
         for (int i = 0; i < 10; i++) {
             new Thread(() -> {
                 try {

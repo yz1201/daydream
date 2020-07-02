@@ -24,7 +24,8 @@ public class UserServiceTest {
 
     @Test
     public void login() {
-        boolean login = userService.login("root", "root");
-        System.out.println(login);
+//        boolean login = userService.login("root", "root");
+//        System.out.println(login);
+        userService.findAll().forEach(System.out::println);
     }
 }

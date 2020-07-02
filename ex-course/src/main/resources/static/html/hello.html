@@ -11,17 +11,34 @@
     <script src="../js/bootstrap.min.js"></script>
 </head>
 <body class="bg-success container-fluid">
-<div class="row container-fluid">
-    <div class="card container">
-        <div class="card-header">
-            <h1>la la</h1>
-        </div>
-    </div>
+<!--<div class="row container-fluid">-->
+<!--    <div class="card container">-->
+<!--        <div class="card-header">-->
+<!--            <h1>la la</h1>-->
+<!--        </div>-->
+<!--    </div>-->
 
-</div>
-<div class="row container-fluid bg-dark">
+<!--</div>-->
+<!--<div class="row container-fluid bg-dark">-->
+<!--<dl>-->
+<!--    <dt>sss</dt>-->
+<!--    <dd>ss</dd>-->
+<!--    <dd>s</dd>-->
+<!--</dl>-->
 
-</div>
+<!--</div>-->
+<img src="../image/off.gif" alt="" onclick="open()" id="light">
+
 
 </body>
+<script>
+    console.log("see here");
+
+    function open() {
+        const light = document.getElementById("light");
+        alert("？")
+        light.src = "../image/on.gif";
+    }
+
+</script>
 </html>

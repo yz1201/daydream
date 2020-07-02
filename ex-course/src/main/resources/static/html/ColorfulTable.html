@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BeautifulTable</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+        <tr class="bg-success">
+            <th><input type="checkbox" id="cbs_all" class="cbs"></th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>删除</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="bg-info">
+            <th><input type="checkbox" class="cbs"></th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+            <th>
+                <button class="btn btn-danger" onclick="del1(this)">Delete</button>
+            </th>
+        </tr>
+        <tr class="bg-secondary">
+            <th><input type="checkbox" class="cbs"></th>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+            <th>
+                <button class="btn btn-danger" onclick="del1(this)">Delete</button>
+            </th>
+        </tr>
+        <tr class="bg-warning">
+            <th><input type="checkbox" class="cbs"></th>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+            <th>
+                <button class="btn btn-danger" onclick="del1(this)">Delete</button>
+            </th>
+        </tr>
+
+        <tr class="bg-primary">
+            <th><input type="checkbox" class="cbs"></th>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+            <th>
+                <button class="btn btn-danger" onclick="del1(this)">Delete</button>
+            </th>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <form class="form-control" method="get" action="#">
+            <div class="form-group">
+                <label for="usr">first name:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">last name:</label>
+                <input type="text" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="email">email:</label>
+                <input type="text" class="form-control" id="email">
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+<script>
+
+    const boxes = document.getElementsByClassName("cbs");
+    // boxes[3].setAttribute("checked", "checked");
+    const cbs_all = document.getElementById("cbs_all");
+    // console.log("go")
+    // cbs_all.setAttribute("checked", "checked");
+
+    cbs_all.onchange = function () {
+        console.log("s h b y");
+        for (let i = 0; i < boxes.length; i++) {
+            console.log("change status now ! ");
+
+            // boxes[i].setAttribute("checked",);
+            boxes[i].checked = cbs_all.checked;
+        }
+    }
+
+    function del1(obj) {
+        obj.parentNode.parentNode.parentNode.removeChild(obj.parentNode.parentNode);
+        // alert(obj.parentNode.parentNode.parentNode);
+    }
+</script>
+</body>
+</html>

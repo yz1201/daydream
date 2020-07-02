@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timeismoney</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body class="bg-success">
+
+<button class="btn btn-info container" onclick="stopShowTime()" disabled>begin</button>
+
+<span id="time_span"></span>
+
+<script>
+    let timer;
+    timer = setTimeout(showTime, 1000);
+
+    console.log("timer ->" +timer)
+
+    function showTime() {
+        document.getElementById("time_span").innerText = new Date().toLocaleString();
+        console.log("sth useful")
+        timer = setTimeout(showTime, 1000);
+    }
+
+    function stopShowTime() {
+        console.log("stop sth plz")
+        if (timer !== null) {
+            clearTimeout(timer)
+        }
+    }
+
+</script>
+</body>
+</html>
