@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>BeautifulTable</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     Bootstrap
+<!--        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">-->
+<!--        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>-->
+<!--        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>-->
+<!--        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
 </head>
 <body class="container bg-success">
 
@@ -34,22 +34,24 @@
     <!--        </div>-->
     <!--    </div>-->
 
-    <div class="col-lg-6">
-        <select id="provice" name="pro" onchange="change(this.value)">
+    <div>
+        <select id="provice" style="width: 100px" name="pro" onchange="change(this.value)">
             <option value="0">--请选择--</option>
             <option value="1">河南省</option>
             <option value="2">浙江省</option>
             <option value="3">台湾省</option>
         </select>
-    </div>
 
-    <div class="col-lg-6">
-        <select id="city">
-            <option>--请选择--</option>
+        <select id="city" style="width: 100px">
+            <option value="0">--请选择--</option>
             <!--            <option>河南省</option>-->
             <!--            <option>浙江省</option>-->
             <!--            <option>台湾省</option>-->
         </select>
+    </div>
+
+    <div>
+
     </div>
 
 
@@ -58,7 +60,7 @@
 
 <script>
     // const province = document.getElementById("menu1");
-    const citys = document.getElementById("menu1");
+    const citys = document.getElementById("city");
 
     let array1 = new Array(3);
     array1[0] = ["", "--请选择--"];
@@ -66,12 +68,28 @@
     array1[2] = ["杭州", "温州", "湖州"];
     array1[3] = ["台北", "高雄", "花莲"];
 
+
+    function delOld() {
+        // const ops = citys.getElementsByTagName("option");
+        // console.log("ops -> " + ops.length + " -> " + ops);
+
+        // for (let i = 0; i < ops.length; i++) {
+        // console.log("ops- " + i + " -> " + ops[i]);
+        // citys.removeChild(ops[i]);
+        // i++;
+        citys.innerHTML = "<option value='0'>--请选择--</option>";
+        // }
+    }
+
     // const citys = document.getElementById("menu2");
     function change(obj) {
         // if (province.value === "he")
-        console.log("val - " + obj)
+
+
+        console.log("val - " + obj);
+        delOld();
         // citys.innerHTML="";
-        for (let i = 1; i < array1.length; i++) {
+        for (let i = 0; i < array1.length - 1; i++) {
             const option1 = document.createElement("option");
             const text1 = document.createTextNode(array1[obj][i]);
             option1.appendChild(text1);

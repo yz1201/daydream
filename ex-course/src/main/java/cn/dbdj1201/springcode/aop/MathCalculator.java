@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j(topic = "c.MathCalculator")
 public class MathCalculator {
     public int div(int i, int j) {
+//        log.debug("cal - {}", this);
         return i / j;
     }
 }

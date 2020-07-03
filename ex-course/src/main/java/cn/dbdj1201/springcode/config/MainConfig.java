@@ -28,7 +28,7 @@ public class MainConfig {
     @Bean("yz120101")
     @Conditional(WindowsCondition.class)
     public Person person01() {
-        log.debug("osName - {}", osName);
+//        log.debug("osName - {}", osName);
         return new Person("root", 22);
     }
 

@@ -53,9 +53,9 @@ public class BeanTest070201 {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         for (String beanDefinitionName : ac.getBeanDefinitionNames()) {
-            log.debug("{}",beanDefinitionName);
+            log.debug("{}", beanDefinitionName);
         }
 
 //        System.out.println(ac.getBean("&colorFactoryBean"));
@@ -63,9 +63,13 @@ public class BeanTest070201 {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
         MathCalculator mathCalculator = (MathCalculator) ac.getBean("mathCalculator");
-        System.out.println(mathCalculator.div(5, 0));
+//        log.debug("cal -> {}", mathCalculator);
+        for (String beanDefinitionName : ac.getBeanDefinitionNames()) {
+            log.debug("{}", beanDefinitionName);
+        }
+        System.out.println(mathCalculator.div(5, 1));
     }
 
 }
