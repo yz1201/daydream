@@ -37,8 +37,36 @@ public class Base {
             6，注册BeanPostProcessors
                 不同接口类型的组件后置处理器，在bean创建前后的执行时机是不一样的。
                 后置处理器都可以通过某些接口指定优先级
+            7，initMessageSource（）初始化MessageSource(做国际化功能，消息绑定，消息解析)
+            8，初始化事件派发器 initApplicationEventMulticaster();
+            9，onRefresh 留给子容器（子类）
+            10，registerListeners 给容器中将所有项目里面的ApplicationListener注册进来。
+            11，finishBeanFactoryInitialization(beanFactory) 初始化所有剩下的单实例Bean
 
 
+
+            Spring容器在启动的时候，会先保存所有注册进来的Bean的定义信息
+                1，xml注册 <bean>
+                2，注解注册 @Controller @Service @Component @Bean @Repository
+            Spring容器会在合适的时机创建这些Bean
+                1，用到这个Bean的时候，利用getBean创建bean，创建好之后保存在容器
+                2，统一创建剩下所有bean的时候，finishBeanFactoryInitialization();
+            后置处理器
+                每一个bean创建完成，都会用各种后置处理器处理，来增强bean的功能
+            Spring的事件驱动模型
+                ApplicationListener 事件监听
+                ApplicationEventMulticaster    事件派发
 
      */
 }
+
+//
+//interface Test0704 {
+//    private void test1(){
+//        System.out.println("");
+//    }
+//
+////    void test();
+//}
+
+

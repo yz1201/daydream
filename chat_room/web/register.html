@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册-成为真男人</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/slidercaptcha.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/longbow.slidercaptcha.js"></script>
+    <style type="text/css">
+        #div_parent {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        form {
+            margin-top: 40px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+    </style>
+</head>
+<body class="bg-success">
+
+<div id="div_parent" class="container">
+    <h2>着火了</h2>
+    <form action="register" method="post">
+        <div class="form-group">
+            <label for="email">Username:</label>
+            <input type="text" class="form-control" id="email" name="username" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password" placeholder="Enter password">
+        </div>
+        <div class="form-group" style="margin-bottom: 20px">
+            <label for="verifyCode">VerifyCode:</label><input id="verifyCode" name="verifyCode"
+                                                   class="form-control" placeholder="verify code" type="text"><br>
+            <img src="captcha" width="130px" height="48px" alt="出问题了"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+
+    <!--    <script>-->
+    <!--        const captcha = $('#captcha');-->
+    <!--        captcha.sliderCaptcha({-->
+    <!--            width: 240,-->
+    <!--            height: 120,-->
+    <!--            verify: function (arr, url) {-->
+    <!--                let ret = false;-->
+    <!--                $.ajax({-->
+    <!--                    url: url,-->
+    <!--                    data: JSON.stringify(arr),-->
+    <!--                    async: false,-->
+    <!--                    cache: false,-->
+    <!--                    type: 'POST',-->
+    <!--                    contentType: 'application/json',-->
+    <!--                    dataType: 'json',-->
+    <!--                    success: function (result) {-->
+    <!--                        ret = result;-->
+    <!--                    }-->
+    <!--                });-->
+    <!--                return ret;-->
+    <!--            }-->
+    <!--        });-->
+    <!--        captcha.sliderCaptcha('reset');-->
+    <!--    </script>-->
+</div>
+</body>
+</html>
