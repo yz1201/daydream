@@ -1,75 +1,85 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html lang="en">
-<head>
-    <title>起飞聊天室——登录</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords"
-          content="Transparent Sign In Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"/>
-    <script type="application/x-javascript">
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
+<%@ page contentType="text/html;charset=UTF-8" %>
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>管理员登录</title>
+
+    <!-- 1. 导入CSS的全局样式 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- 3. 导入bootstrap的js文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        //切换验证码
+        function refreshCode() {
+            //1.获取验证码图片对象
+            const vcode = document.getElementById("vcode");
+
+            //2.设置其src属性，加时间戳
+            vcode.src = "${pageContext.request.contextPath}/captcha?time=" + new Date().getTime();
         }
     </script>
+    <style>
+        #div_refresh {
+            align-content: center;
+        }
 
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <link rel="icon" href="img/chat.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/font-awesome.css"/> <!-- Font-Awesome-Icons-CSS -->
-    <link rel="stylesheet" href="css/login.css" type="text/css" media="all"/> <!-- Style-CSS -->
+        input, h3 {
+            text-align: center;
+        }
+
+        div{
+            text-align: center;
+            align-content: center;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+    </style>
 </head>
+<body class="bg-success">
+<div class="container" style="width: 400px; align-content: center">
+    <h3 style="text-align: center;">管理员登录</h3>
+    <form action="${pageContext.request.contextPath}/login" method="post">
+        <div class="form-group">
+            <label for="user">用户名：</label>
+            <input type="text" name="username" class="form-control" id="user" placeholder="请输入用户名"/>
+        </div>
 
+        <div class="form-group">
+            <label for="password">密码：</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="请输入密码"/>
+        </div>
 
-<body class="background">
-<div class="header-w3l">
-    <h1>起飞聊天室</h1>
-</div>
-<div class="main-content-agile">
-    <div class="sub-main-w3">
-        <h2>登录</h2>
-        <form>
+        <div class="form-inline" id="div_refresh">
+            <label for="verifyCode">VerifyCode:&nbsp;</label>
+            <input id="verifyCode" name="verifyCode" class="form-control"
+                   type="text"><br>
+            <%--            <img src="captcha"  width="130px" height="48px"/>--%>
+            <a href="javascript:refreshCode();" style="margin-top: 20px; margin-left: 120px">
+                <img src="${pageContext.request.contextPath}/captcha" title="看不清点击刷新" id="vcode" alt=""/>
+            </a>
 
-            <div class="icon1">
-                <input placeholder="用户名" id="username" type="text"/>
-            </div>
+        </div>
+        <hr/>
+        <div class="form-group" style="text-align: center;">
+            <input class="btn btn btn-primary" type="submit" value="登录">
+        </div>
+    </form>
 
-            <div class="icon2">
-                <input placeholder="密码" id="password" type="password"/>
-            </div>
-
-            <div class="clear"></div>
-            <input type="button" value="登录" onclick="login()"/>
-        </form>
+    <!-- 出错显示的信息框 -->
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        <strong>${login_msg}</strong>
     </div>
 </div>
-<div class="footer">
-    <p>未来科技有限公司 版权所有Copyright 2006-2019 All Rights Reserved </p>
-</div>
 </body>
-<script type="text/javascript">
-    function login() {
-        $.ajax({
-            type: 'POST',
-            url: 'login',
-            dataType: 'json',
-            data: {
-                username: $("#username").val(),
-                password: $("#password").val()
-            },
-            success: function (data) {
-                console.log("data - " + data.success + " -  " + data.message)
-                if (data.success) {
-                    window.location.href = "chat.jsp";
-                } else {
-                    alert(data.message);
-                }
-            }
-        });
-    }
-
-</script>
 </html>

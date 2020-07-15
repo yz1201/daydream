@@ -5,7 +5,6 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.sql.DataSource;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -25,7 +24,7 @@ public class JDBCUtils {
         try {
             //1.加载配置文件
             Properties pro = new Properties();
-            pro.load(JDBCUtils.class.getClassLoader().getResourceAsStream("druid.properties"));
+            pro.load(JDBCUtils.class.getClassLoader().getResourceAsStream("jdbc.properties"));
             //2.获取DataSource
             ds = DruidDataSourceFactory.createDataSource(pro);
         } catch (Exception e) {

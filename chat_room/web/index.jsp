@@ -1,36 +1,42 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 2019/7/23
-  Time: 19:19
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <title>起飞</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>首页</title>
+
+    <!-- 1. 导入CSS的全局样式 -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
     <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <!-- 3. 导入bootstrap的js文件 -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    </script>
     <style>
-        div{
-            margin-top: 120px;
+        #div_dody {
+            align-content: center;
         }
-        a{
-            margin-top: 64px;
-            margin-left: 40px;
-            margin-right: 40px;
-            font-size: 40px;
-            color: #1e7e34;
-        }
+
     </style>
 </head>
-<body class="bg-danger">
-<div class="container">
-    <a href="login.jsp">已注册？&nbsp;请转登录页面</a><br>
-    <a href="register.html">未注册? &nbsp;请去注册</a>
+<body class="bg-success">
+
+<div class="container" id="div_dody">
+    <div class="row"><h3>${curUser.username},欢迎您</h3></div>
+    <div class="row">
+        <a
+                href="${pageContext.request.contextPath}/listUserPage"
+                style="text-decoration:none;font-size:33px">查询所有用户信息
+        </a>
+    </div>
+
 </div>
+
+
 </body>
 </html>

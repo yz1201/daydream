@@ -33,6 +33,8 @@ public class HelloServlet extends HttpServlet {
         System.out.println("你喝多了吗");
         System.out.println("你喝多了吗");
         System.out.println("你喝多了吗");
+        System.out.println(req.getContextPath());
+        resp.sendRedirect(req.getContextPath()+"/download.html");
     }
 
     @Override

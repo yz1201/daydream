@@ -1,11 +1,13 @@
 package cn.dbdj1201.service.impl;
 
 import cn.dbdj1201.dao.UserDao;
+import cn.dbdj1201.entity.PageBean;
 import cn.dbdj1201.entity.User;
 import cn.dbdj1201.service.IUserService;
 import redis.clients.jedis.Jedis;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author yz1201
@@ -49,5 +51,65 @@ public class UserService implements IUserService {
     @Override
     public List<User> findByUsername(String username) {
         return new UserDao().findByUsername(username);
+    }
+
+    @Override
+    public List<User> findAll() {
+        return new UserDao().findAll();
+    }
+
+    @Override
+    public void addUser(User newUser) {
+        new UserDao().createUser(newUser);
+    }
+
+    @Override
+    public void deleteByUserId(Integer userId) {
+        new UserDao().deleteById(userId);
+    }
+
+    @Override
+    public User findByUserId(Integer id) {
+        return new UserDao().findByUSerId(id);
+    }
+
+    @Override
+    public void updateUser(User updateUser) {
+        new UserDao().updateUser(updateUser);
+    }
+
+    @Override
+    public void delSelectedUsers(List<Integer> ids) {
+        new UserDao().deleteUserByIds(ids);
+    }
+
+    @Override
+    public PageBean<User> findByPages(Integer currentPage, Integer rows) {
+//        return new UserDao().findUserPages(currentPage,rows);
+
+        UserDao userDao = new UserDao();
+        List<User> userPages = userDao.findUserPages((currentPage - 1) * rows, rows);
+        int totalCount = userDao.findCounts();
+        PageBean<User> pb = new PageBean<>();
+        pb.setList(userPages);
+        pb.setCurrentPage(currentPage);
+        pb.setRows(rows);
+        pb.setTotalCount(totalCount);
+        pb.setTotalPage(totalCount % rows == 0 ? totalCount / rows : totalCount / rows + 1);
+        return pb;
+    }
+
+    @Override
+    public PageBean<User> findByPagesConditional(int currentPage, int rows, Map<String, String[]> condition) {
+        PageBean<User> pb = new PageBean<>();
+        UserDao userDao = new UserDao();
+        int totalCount = userDao.findCountsConditionally(condition);
+        pb.setTotalCount(totalCount);
+        List<User> users = userDao.findUserPagesConditionally((currentPage - 1) * rows, rows, condition);
+        pb.setCurrentPage(currentPage);
+        pb.setTotalPage(totalCount % rows == 0 ? totalCount / rows : totalCount / rows + 1);
+        pb.setRows(rows);
+        pb.setList(users);
+        return pb;
     }
 }

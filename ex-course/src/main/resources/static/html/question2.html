@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        table {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        input {
+            width: 40px;
+            text-align: center;
+        }
+
+        #btn_consume, #span_consume {
+            float: right;
+            margin-right: 20px;
+        }
+
+        #a_clean {
+            float: left;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body class="bg-success container">
+
+<table class="table table-dark table-bordered table-hover">
+
+    <tr>
+        <th>商品</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+        <th>操作</th>
+    </tr>
+
+
+    <tr>
+        <td>【5本26.8元】经典儿童文学彩图青少版八十天环游地球中学生语文教学大纲</td>
+        <td>￥12.6</td>
+        <td>
+            <button id="sub1">-</button>
+            <input type="text" id="text_1" value="1">
+            <button class="add1">+</button>
+        </td>
+        <td>￥12.6</td>
+        <td><a href="#">删除</a></td>
+    </tr>
+
+    <tr>
+        <td>【2000张贴纸】贴纸书 3-6岁 贴画儿童 贴画书全套12册 贴画 贴纸</td>
+        <td>￥24.80</td>
+        <td>
+            <button class="sub2">-</button>
+            <input type="text" id="text_2" value="1">
+            <button class="add2">+</button>
+        </td>
+        <td>￥24.80</td>
+        <td><a href="#">删除</a></td>
+    </tr>
+
+    <tr>
+        <td>唐诗三百首+成语故事全2册 一年级课外书 精装注音儿童版 小学生二三年级课外阅读书籍</td>
+        <td>￥29.80</td>
+        <td>
+            <button class="sub3">-</button>
+            <input type="text" id="text_3" value="1">
+            <button class="add3">+</button>
+        </td>
+        <td>￥29.80</td>
+        <td><a href="#">删除</a></td>
+    </tr>
+
+    <tr>
+        <td colspan="5"><a id="a_clean">清理购物车</a>
+            <button id="btn_consume" class="btn btn-danger">去结算</button>
+            <span id="span_consume">已经选3件商品，总价</span></td>
+    </tr>
+
+
+</table>
+
+
+</body>
+<script>
+    const text1 = document.getElementById("text_1");
+    const text2 = document.getElementById("text_2");
+    const text3 = document.getElementById("text_3");
+
+    const subBtn1 = document.getElementById("sub1");
+    const subBtn2 = document.getElementById("sub2");
+    const subBtn3 = document.getElementById("sub3");
+    const addBtn1 = document.getElementById("add1");
+    const addBtn2 = document.getElementById("add2");
+    const addBtn3 = document.getElementById("add3");
+
+
+    subBtn1.onclick = function () {
+        text1.innerText = text1.innerText - 1;
+    }
+
+    subBtn2.onclick = function () {
+        text1.innerText = text1.innerText - 1;
+    }
+
+    subBtn3.onclick = function () {
+        text1.innerText = text1.innerText - 1;
+    }
+
+    addBtn1.onclick = function () {
+        text1.innerText = text1.innerText + 1;
+    }
+    addBtn2.onclick = function () {
+        text1.innerText = text1.innerText + 1;
+    }
+    addBtn3.onclick = function () {
+        text1.innerText = text1.innerText + 1;
+    }
+
+
+</script>
+</html>
