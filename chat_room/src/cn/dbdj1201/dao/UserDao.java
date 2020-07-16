@@ -35,6 +35,10 @@ public class UserDao {
         template = new JdbcTemplate(dataSource);
     }
 
+    public JdbcTemplate getTemplate() {
+        return template;
+    }
+
     public User login(String username, String password) {
         User user;
         try {

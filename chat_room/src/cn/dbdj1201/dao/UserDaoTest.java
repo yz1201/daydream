@@ -3,10 +3,12 @@ package cn.dbdj1201.dao;
 
 import cn.dbdj1201.entity.User;
 import org.junit.Test;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author yz1201
@@ -55,13 +57,22 @@ public class UserDaoTest {
     @Test
     public void deleteUserByIds() {
 
-        new UserDao().deleteUserByIds(Arrays.asList(99, 100));
+        JdbcTemplate template = new UserDao().getTemplate();
+//        List<Map<String, Object>> maps = template.queryForList("select * from tb_user where id = 1");
+
+        Map<String, Object> objectMap = template.queryForMap("select email from tb_user where id =1");
+        System.out.println(objectMap);
+        System.out.println("====");
+//        maps.forEach(map -> map.entrySet().forEach(System.out::println));
+
+//        new UserDao().deleteUserByIds(Arrays.asList(99, 100));
     }
 
     @Test
     public void findUserPages() {
 //        new UserDao().findUserPages(1,5).forEach(System.out::println);
         System.out.println(new UserDao().findCounts());
+
     }
 
     @Test
