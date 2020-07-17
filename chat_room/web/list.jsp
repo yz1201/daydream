@@ -74,11 +74,7 @@
                 }
 
             }
-
-
         }
-
-
     </script>
 </head>
 <body>
@@ -150,11 +146,11 @@
         <nav aria-label="Page navigation">
             <ul class="pagination">
                 <c:if test="${pb.currentPage == 1}">
-                    <li class="disabled">
+                    <li class="disabled page-item">
                 </c:if>
 
                 <c:if test="${pb.currentPage != 1}">
-                    <li>
+                    <li class="page-item">
                 </c:if>
 
 

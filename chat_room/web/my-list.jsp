@@ -149,14 +149,14 @@
         <nav aria-label="Page navigation">
             <ul class="pagination">
                 <c:if test="${pb.currentPage == 1}">
-                <li class="disabled"> </c:if>
+                <li class="disabled page-item"> </c:if>
 
                     <c:if test="${pb.currentPage != 1}">
-                <li>
+                <li class="page-item">
                     </c:if>
 
 
-                    <a href="${pageContext.request.contextPath}/listUserPage?currentPage=${pb.currentPage - 1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
+                    <a class="page-link" href="${pageContext.request.contextPath}/listUserPage?currentPage=${pb.currentPage - 1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
                        aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
@@ -167,21 +167,21 @@
 
 
                     <c:if test="${pb.currentPage == i}">
-                        <li class="active"><a
+                        <li class="active page-item"><a class="page-link"
                                 href="${pageContext.request.contextPath}/listUserPage?currentPage=${i}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
                         </li>
                     </c:if>
                     <c:if test="${pb.currentPage != i}">
-                        <li>
-                            <a href="${pageContext.request.contextPath}/listUserPage?currentPage=${i}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
+                        <li class="page-item">
+                            <a class="page-link" href="${pageContext.request.contextPath}/listUserPage?currentPage=${i}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a>
                         </li>
                     </c:if>
 
                 </c:forEach>
 
 
-                <li>
-                    <a href="${pageContext.request.contextPath}/listUserPage?currentPage=${pb.currentPage + 1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
+                <li class="page-item">
+                    <a class="page-link" href="${pageContext.request.contextPath}/listUserPage?currentPage=${pb.currentPage + 1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
                        aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                     </a>

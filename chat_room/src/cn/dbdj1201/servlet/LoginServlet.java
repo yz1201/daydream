@@ -8,6 +8,7 @@ import com.wf.captcha.utils.CaptchaUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -56,6 +57,8 @@ public class LoginServlet extends HttpServlet {
             req.setAttribute("login_msg", "验证码错误");
             req.getRequestDispatcher("login.jsp").forward(req, resp);
         }
+
+        Cookie cookie = new Cookie("test","weqeqw");
 
 
 //        resp.getWriter().write(JSON.toJSONString(resultMap));
