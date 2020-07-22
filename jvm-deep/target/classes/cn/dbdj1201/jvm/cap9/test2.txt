@@ -1,0 +1,133 @@
+Classfile /F:/it_course/daydream/jvm-deep/target/classes/cn/dbdj1201/jvm/cap9/Order.class
+  Last modified 2020-7-18; size 749 bytes
+  MD5 checksum 8a31721e8d96cc37f81915eccb435345
+  Compiled from "MethodAreaTest.java"
+class cn.dbdj1201.jvm.cap9.Order
+  minor version: 0
+  major version: 52
+  flags: ACC_SUPER
+Constant pool:
+   #1 = Methodref          #11.#34        // java/lang/Object."<init>":()V
+   #2 = String             #35            // A
+   #3 = Fieldref           #10.#36        // cn/dbdj1201/jvm/cap9/Order.str:Ljava/lang/String;
+   #4 = Fieldref           #10.#37        // cn/dbdj1201/jvm/cap9/Order.num:B
+   #5 = Fieldref           #10.#38        // cn/dbdj1201/jvm/cap9/Order.c:C
+   #6 = Fieldref           #39.#40        // java/lang/System.out:Ljava/io/PrintStream;
+   #7 = String             #30            // hello
+   #8 = Methodref          #41.#42        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #9 = Fieldref           #10.#43        // cn/dbdj1201/jvm/cap9/Order.count:I
+  #10 = Class              #44            // cn/dbdj1201/jvm/cap9/Order
+  #11 = Class              #45            // java/lang/Object
+  #12 = Utf8               count
+  #13 = Utf8               I
+  #14 = Utf8               NUMBER
+  #15 = Utf8               ConstantValue
+  #16 = Integer            2
+  #17 = Utf8               str
+  #18 = Utf8               Ljava/lang/String;
+  #19 = Utf8               num
+  #20 = Utf8               B
+  #21 = Utf8               c
+  #22 = Utf8               C
+  #23 = Utf8               <init>
+  #24 = Utf8               ()V
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               this
+  #29 = Utf8               Lcn/dbdj1201/jvm/cap9/Order;
+  #30 = Utf8               hello
+  #31 = Utf8               <clinit>
+  #32 = Utf8               SourceFile
+  #33 = Utf8               MethodAreaTest.java
+  #34 = NameAndType        #23:#24        // "<init>":()V
+  #35 = Utf8               A
+  #36 = NameAndType        #17:#18        // str:Ljava/lang/String;
+  #37 = NameAndType        #19:#20        // num:B
+  #38 = NameAndType        #21:#22        // c:C
+  #39 = Class              #46            // java/lang/System
+  #40 = NameAndType        #47:#48        // out:Ljava/io/PrintStream;
+  #41 = Class              #49            // java/io/PrintStream
+  #42 = NameAndType        #50:#51        // println:(Ljava/lang/String;)V
+  #43 = NameAndType        #12:#13        // count:I
+  #44 = Utf8               cn/dbdj1201/jvm/cap9/Order
+  #45 = Utf8               java/lang/Object
+  #46 = Utf8               java/lang/System
+  #47 = Utf8               out
+  #48 = Utf8               Ljava/io/PrintStream;
+  #49 = Utf8               java/io/PrintStream
+  #50 = Utf8               println
+  #51 = Utf8               (Ljava/lang/String;)V
+{
+  public static int count;
+    descriptor: I
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public static final int NUMBER;
+    descriptor: I
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 2
+
+  private java.lang.String str;
+    descriptor: Ljava/lang/String;
+    flags: ACC_PRIVATE
+
+  private byte num;
+    descriptor: B
+    flags: ACC_PRIVATE
+
+  private char c;
+    descriptor: C
+    flags: ACC_PRIVATE
+
+  cn.dbdj1201.jvm.cap9.Order();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: ldc           #2                  // String A
+         7: putfield      #3                  // Field str:Ljava/lang/String;
+        10: aload_0
+        11: iconst_2
+        12: putfield      #4                  // Field num:B
+        15: aload_0
+        16: bipush        65
+        18: putfield      #5                  // Field c:C
+        21: return
+      LineNumberTable:
+        line 15: 0
+        line 18: 4
+        line 19: 10
+        line 20: 15
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      22     0  this   Lcn/dbdj1201/jvm/cap9/Order;
+
+  public static void hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #7                  // String hello
+         5: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 23: 0
+        line 24: 8
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_1
+         1: putstatic     #9                  // Field count:I
+         4: return
+      LineNumberTable:
+        line 16: 0
+}
+SourceFile: "MethodAreaTest.java"
