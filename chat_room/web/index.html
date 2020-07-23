@@ -9,7 +9,7 @@
     <!-- 1. 导入CSS的全局样式 -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
-    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!-- 3. 导入bootstrap的js文件 -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -22,4 +22,24 @@
 	</a>
   </div>
   </body>
+
+
+  <script>
+    function sendRequest() {
+      // 直接使用jquery封 装的ajax方法来发送异步请求
+      $.ajax({
+        url:"/list.html",//请求的URL地址
+        type:"post",//请求方式，默认为get
+        data:"username=admin&password=admin", //请求传 参
+        success:function (result) {// 成功响应执行的回调函数
+          alert("响应结果:"+result);
+        },
+        error:function () {// 错误响应执行的回调函数
+          alert("请求失败");
+        },
+        dataType:"text"  //指定接受和响应数据类型
+      });
+    }
+
+  </script>
 </html>
