@@ -40,6 +40,7 @@ public class UserServiceTest {
 //        String set = jedis.set("124", "2323");
 
         Map<String, String> userInfo = jedis.hgetAll("userInfo");
+
         userInfo.forEach((key, value) -> System.out.println(key + "=" + value));
 //        System.out.println(set);
     }

@@ -4,6 +4,7 @@ import cn.dbdj1201.demo.entities.CommonResult;
 import cn.dbdj1201.demo.entities.UserModel;
 import cn.dbdj1201.demo.service.IUserService;
 import com.alibaba.druid.pool.DruidDataSource;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,6 +32,9 @@ public class UserController {
             return new CommonResult<>(200, "登录成功", username + "， 欢迎登录");
         else
             return new CommonResult<>(444, "登录失败", null);
+
+//        ObjectMapper om =new ObjectMapper();
+//        om.writeValue();
     }
 
 }
