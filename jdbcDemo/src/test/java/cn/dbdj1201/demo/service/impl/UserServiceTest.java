@@ -44,4 +44,10 @@ public class UserServiceTest {
         userInfo.forEach((key, value) -> System.out.println(key + "=" + value));
 //        System.out.println(set);
     }
+
+
+    @Test
+    public void test2(){
+
+    }
 }
