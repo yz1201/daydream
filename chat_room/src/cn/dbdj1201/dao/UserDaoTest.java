@@ -15,6 +15,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import javax.sql.DataSource;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 /**
@@ -256,6 +257,117 @@ public class UserDaoTest {
 
         System.out.println(LocalDateTime.parse("1991-11-11T08:20:30"));
         System.out.println(LocalDateTime.parse("1991-11-11 08:20:30", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+    }
+
+    @Test
+    public void testTime8() {
+        LocalDate myDate = LocalDate.of(2018, 9, 5);
+        LocalDate nowDate = LocalDate.now();
+        System.out.println("今天是2018-09-06吗？ " + nowDate.equals(myDate));//今天是2018-09-06吗？ false
+        System.out.println(myDate + "是否在" + nowDate + "之前？ " + myDate.isBefore(nowDate));//2018-09-05是否在2018-09-06之前？ true
+        System.out.println(myDate + "是否在" + nowDate + "之后？ " + myDate.isAfter(nowDate));//2018-09-05是否在2018-09-06之后？ false
+    }
+
+    @Test
+    public void testTime9() {
+        LocalDate nowDate = LocalDate.now();
+        System.out.println(nowDate);//当前日期
+        System.out.println(nowDate.minusYears(1));//一年前
+        System.out.println(nowDate.minusMonths(1));//一月前
+        System.out.println(nowDate.minusWeeks(1));//一周前
+        System.out.println(nowDate.minusDays(1));//一天前
+
+        System.out.println(nowDate.plusYears(1));//一年后
+        System.out.println(nowDate.plusMonths(1));//一月后
+        System.out.println(nowDate.plusWeeks(1));//一周后
+        System.out.println(nowDate.plusDays(1));//一天后
+    }
+
+    @Test
+    public void testTime10() {
+        LocalTime nowTime = LocalTime.now();
+        System.out.println(nowTime);//当前时间
+        System.out.println(nowTime.minusHours(1));//一小时前
+        System.out.println(nowTime.minusMinutes(1));//一分钟前
+        System.out.println(nowTime.minusSeconds(1));//一秒前
+        System.out.println(nowTime.minusNanos(1));//一纳秒前
+
+        System.out.println(nowTime.plusHours(1));//一小时后
+        System.out.println(nowTime.plusMinutes(1));//一分钟后
+        System.out.println(nowTime.plusSeconds(1));//一秒后
+        System.out.println(nowTime.plusNanos(1));//一纳秒后
+    }
+
+    @Test
+    public void testTime11() {
+        Instant instant = Instant.now();
+        System.out.println("当前时间戳是：" + instant);//当前时间戳是：2018-09-06T10:14:29.460Z
+        Date date = Date.from(instant);
+        System.out.println("当前时间戳是：" + date);//当前时间戳是：Thu Sep 06 18:14:29 CST 2018
+        instant = date.toInstant();
+        System.out.println(instant);
+    }
+
+    @Test
+    public void testTime12() {
+        LocalDateTime ldt = LocalDateTime.now();
+        System.out.println(ldt);//2018-09-06T18:22:47.366
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        String ldtStr = ldt.format(dtf);
+
+        System.out.println(ldtStr);//2018-09-06 18:22:47
+        String ldtStr1 = dtf.format(ldt);
+        System.out.println(ldtStr1);//2018-09-06 18:22:47
+    }
+
+    @Test
+    public void testTime13() {
+        LocalDate today = LocalDate.now();
+        System.out.println(today);//2018-09-06
+        LocalDate birthDate = LocalDate.of(1994, 10, 21);
+        System.out.println(birthDate);//1990-10-01
+
+        Period period = Period.between(birthDate, today);//第二个参数减第一个参数
+        System.out.printf("年龄 : %d 年 %d 月 %d 日", period.getYears(), period.getMonths(), period.getDays());//年龄 : 27 年 11 月 5 日
+    }
+
+    @Test
+    public void testTime14() {
+        LocalDateTime today = LocalDateTime.now();
+        System.out.println(today);
+        LocalDateTime birthDate = LocalDateTime.of(1990,10,1,10,50,30);
+        System.out.println(birthDate);
+
+        Duration duration = Duration.between(birthDate, today);//第二个参数减第一个参数
+        System.out.println(duration.toDays());//两个时间差的天数
+        System.out.println(duration.toHours());//两个时间差的小时数
+        System.out.println(duration.toMinutes());//两个时间差的分钟数
+        System.out.println(duration.toMillis());//两个时间差的毫秒数
+        System.out.println(duration.toNanos());//两个时间差的纳秒数
+    }
+    @Test
+    public void testTime15(){
+        LocalDateTime today = LocalDateTime.now();
+        System.out.println(today);
+        LocalDateTime birthDate = LocalDateTime.of(1990,10,1,10,50,30);
+        System.out.println(birthDate);
+
+        System.out.println("相差的年数：" + ChronoUnit.YEARS.between(birthDate, today));
+        System.out.println("相差的月数：" + ChronoUnit.MONTHS.between(birthDate, today));
+        System.out.println("相差的周数：" + ChronoUnit.WEEKS.between(birthDate, today));
+        System.out.println("相差的天数：" + ChronoUnit.DAYS.between(birthDate, today));
+        System.out.println("相差的时数：" + ChronoUnit.HOURS.between(birthDate, today));
+        System.out.println("相差的分数：" + ChronoUnit.MINUTES.between(birthDate, today));
+        System.out.println("相差的秒数：" + ChronoUnit.SECONDS.between(birthDate, today));
+        System.out.println("相差的毫秒数：" + ChronoUnit.MILLIS.between(birthDate, today));
+        System.out.println("相差的微秒数：" + ChronoUnit.MICROS.between(birthDate, today));
+        System.out.println("相差的纳秒数：" + ChronoUnit.NANOS.between(birthDate, today));
+
+        System.out.println("相差的半天数：" + ChronoUnit.HALF_DAYS.between(birthDate, today));
+        System.out.println("相差的十年数：" + ChronoUnit.DECADES.between(birthDate, today));
+        System.out.println("相差的世纪（百年）数：" + ChronoUnit.CENTURIES.between(birthDate, today));
+        System.out.println("相差的千年数：" + ChronoUnit.MILLENNIA.between(birthDate, today));
+        System.out.println("相差的纪元数：" + ChronoUnit.ERAS.between(birthDate, today));
     }
 }
 
