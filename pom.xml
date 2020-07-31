@@ -11,6 +11,7 @@
         <module>jdbcDemo</module>
         <module>concurrentProgrammingStudy</module>
         <module>jvm-deep</module>
+        <module>exam-web</module>
     </modules>
 
     <packaging>pom</packaging>
