@@ -12,6 +12,7 @@
         <module>concurrentProgrammingStudy</module>
         <module>jvm-deep</module>
         <module>exam-web</module>
+        <module>offer</module>
     </modules>
 
     <packaging>pom</packaging>

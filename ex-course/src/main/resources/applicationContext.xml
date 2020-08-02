@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="hello" class="cn.dbdj1201.mbeans.HelloBeans">
+        <property name="text" value="南无阿弥陀佛"/>
+        <property name="users">
+            <map>
+                <entry key="1" value="yz1201-01"/>
+                <entry key="2" value="yz1201-02"/>
+                <entry key="3" value="yz1201-03"/>
+                <entry key="4" value="yz1201-04"/>
+            </map>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>1</value>
+                <value>1</value>
+                <value>1</value>
+                <value>1</value>
+                <value>1</value>
+            </list>
+        </property>
+
+        <property name="prop">
+            <props>
+                <prop key="name">heihei</prop>
+                <prop key="age">15</prop>
+            </props>
+        </property>
+
+        <property name="names">
+            <set>
+                <value>123</value>
+                <value>asd</value>
+                <value>asdas</value>
+                <value>1asdsa</value>
+            </set>
+        </property>
+    </bean>
+</beans>
