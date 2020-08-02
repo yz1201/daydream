@@ -3,7 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/concurrentProgrammingStudy/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/concurrentProgrammingStudy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exam-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exam-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jdbcDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jdbcDemo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm-deep/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm-deep/src/main/resources" charset="UTF-8" />
   </component>
 </project>
